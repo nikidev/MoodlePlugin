@@ -1,0 +1,22 @@
+.simplehtml .displaydate {
+    font-size: .8em;
+    text-align: center;
+}
+
+
+
+.links{
+	font-size:30px;
+	list-style-type: none;
+	
+}
+
+.links li a {
+	text-decoration: none;
+}
+
+.crud-options{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}

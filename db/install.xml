@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/simplehtml/db" VERSION="20160919" COMMENT="XMLDB file for Moodle blocks/simplehtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_simplehtml" COMMENT="Default comment for block_simplehtml, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="blockid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The blockid is a foreign key that references the block table. This will be used to join our data rows to the block table."/>
+        <FIELD NAME="pagetitle" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false" COMMENT="The pagetitle is simply text that will be used for links to this simplehtml page."/>
+        <FIELD NAME="displaytext" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="The displaytext field will be displayed as text on the simplehtml page, potentially as HTML."/>
+        <FIELD NAME="format" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The format field will contain the integer value that represents the format the text was entered in."/>
+        <FIELD NAME="filename" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The filename field stores the name of a file"/>
+        <FIELD NAME="picture" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The URL for the user's chosen picture"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Add the description field that will be displayed on the page"/>
+        <FIELD NAME="displaypicture" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The displaypicture field will be the &quot;yes&quot; or &quot;no&quot; question on the form."/>
+        <FIELD NAME="displaydate" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Displaydate  is a UNIX timestamp which is an integer value."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
